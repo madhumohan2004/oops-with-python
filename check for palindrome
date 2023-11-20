@@ -1,0 +1,8 @@
+def ispanlindrom(text):
+    rev=text[::-1]
+    return rev
+text=input("enter a text")
+text1=ispanlindrom(text)
+if (text==text1):
+    print("palindrome")
+        
