@@ -1,0 +1,12 @@
+class student:
+
+    def __init__(self,name,marks,gpa):
+        self.name=name
+        self.marks=marks
+        self.gpa=gpa
+
+student1=student("bhavesh",25,7.5)
+student2= student("amit",31,7.7)
+print(student1.name)
+print(isinstance(student1, student))
+print(issubclass(student, object))
