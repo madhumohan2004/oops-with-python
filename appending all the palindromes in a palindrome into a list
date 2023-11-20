@@ -1,0 +1,22 @@
+def ispalindrome(text):
+    rev=text[::-1]
+    return rev
+    
+
+def count(text):
+    count=0
+    list1=[]
+    for i in range(0,len(text)):
+        for j in range(i+1,len(text)):
+            substring=text[i:j+1]
+            reversed=ispalindrome(substring)
+            if substring==reversed:
+                list1.append(substring)
+                count+=1
+    return count,list1
+    
+text1 = input("enter a text")
+count,list1=count(text1)
+
+print(f"the number of palindromes{count} and the list {list1}")
+
