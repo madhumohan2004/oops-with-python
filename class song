@@ -1,0 +1,11 @@
+class songs:
+
+    def __init__(self,lyrics):
+        self.lyrics=lyrics
+    def sing_me_a_song(self):
+        for i in self.lyrics:
+            print(i)
+
+song1=songs(["this is my fight song","have a sunshine on you"])
+
+song1.sing_me_a_song()
